@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/itemNameRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="itemName"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/itemQuantityRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemNameRV"
+                android:paddingTop="5dp"
+                android:text="Quantity"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/dateAddedRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemQuantityRV"
+                android:textStyle="italic"
+                android:text="Date"/>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/dateAddedRV"
+                android:layout_alignParentRight="true"
+                >
+
+                <Button
+                    android:id="@+id/editButtonRV"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:layout_marginRight="15dp"
+                    />
+                <Button
+                    android:id="@+id/deleteButtonRV"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:drawable/ic_delete"/>
+
+            </TableRow>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

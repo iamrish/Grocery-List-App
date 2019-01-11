@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/itemNameDetailsID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="itemName"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemQuantityDetailsID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/itemNameDetailsID"
+                    android:paddingTop="5dp"
+                    android:text="Quantity"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dateAddedDetailsID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/itemQuantityDetailsID"
+                    android:text="Date"
+                    android:textStyle="italic" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/dateAddedDetailsID"
+                    android:layout_alignParentRight="true">
+
+                    <Button
+                        android:id="@+id/editButtonDetailsID"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:drawable/ic_menu_edit" />
+
+                    <Button
+                        android:id="@+id/deleteButtonDetailsID"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@android:drawable/ic_delete" />
+
+                </TableRow>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
